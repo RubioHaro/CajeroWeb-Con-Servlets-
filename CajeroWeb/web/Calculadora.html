@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="text-center">Ingresa unos numeros</div>
+                        <br>
+                        <form method="POST" class="form-group text-center" action='Calculadora'>                            
+                            <BR>Numero1:<input class="form-control " autofocus autocomplete="off" placeholder="Numerito 1" required type=NUMBER name="Numero1">
+                            <BR>Numero2:<input class="form-control " autocomplete="off" placeholder="Numerito 2" required type=NUMBER name="Numero2">
+                            
+                            Suma<input type="Radio" class="radio" name="opc" checked value="+"/>
+                            Resta<input type="Radio" class="radio" name="opc" value="-"/>
+                            Multiplicacion<input type="Radio" class="radio" name="opc" value="*"/>
+                            Division<input type="Radio" class="radio" name="opc" value="/"/>
+                            <input class="btn-info"  type=submit value="Enviar Numeros">
+                            
+                            <input class="btn-info" type=reset value="Borrar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery2.min.js"></script>
+    </body>
+</html>

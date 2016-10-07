@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cajero Web</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Ingresar
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">                                                                
+                                <form method="POST" class="form-group" action='Ingresar'>
+                                    <input class="form-control" style="display: none" type="text" name="Usuario" id="Usuario" placeholder="Usuario" required/>
+                                    <br/>
+                                    <input class="form-control" type="text" name="Pass" id="Pass" placeholder="Password" required/>
+                                    <br/>
+                                    <div class="text-center "><input class="btn-info" type=submit   value="Ingresar"/></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Registrar
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">                                                                
+                                <form method="POST" class="form-group" action='ServletHolaMundo'>
+                                    <input class="form-control" type="text" name="Usuario" id="UsuarioRegistro" placeholder="Usuario" required/>
+                                    <br/>
+                                    <input class="form-control" type="number" name="Edad" id="Edad" placeholder="Edad" required/>
+                                    <br/>                                    
+                                    <input class="form-control" type="text" name="PassRegistro" id="PassRegistro" placeholder="Password" required/>
+                                    <br/>
+                                    <input class="form-control" type="text" name="PassRegistroVelidacion" id="PassRegistroVelidacion" placeholder="Password" required/>
+                                    <br/>
+                                    <input class="form-control" type="email" name="Email" id="Email" placeholder="Email" required/>
+                                    <br/>
+                                    <div class="text-center "><input class="btn-info" type=submit value="Registrar"/></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery2.min.js"></script>
+    </body>
+</html>
