@@ -1,0 +1,32 @@
+/*
+New Ligths
+Services info Web
+Rubio Haro 
+*/
+/* 
+    Created on : 05-oct-2016, 19:53:26
+    Author     : Rod
+*/
+
+body {
+    background-image: url('../Img/fondo.jpg');
+    background-size: cover; 
+}
+.jumbotron
+{
+    background-color: #1D2F64 !important;
+    color: #F7870F !important; 
+}
+.panel-heading {
+    background-color: #FC7500 !important;
+    color: white !important;        
+}
+
+.navbar{
+    background-color: #1D2F64;
+}
+
+.panel-body {
+    background-color: #1D2F64 !important;
+    color: white !important;
+}

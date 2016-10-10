@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cajero Web</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            function validarUsuario(element){                
+                if(element.value !== ""){
+                    document.getElementById("tache1").src="Img/si.png";
+                }else{
+                    document.getElementById("tache1").src="Img/no.png";
+                }
+            }    
+            function validarPass(element){
+                document.getElementById("tache1").style="default";
+                if(element.value !== "" && element.value.length >=8){
+                    
+                    document.getElementById("tache2").src="Img/si.png";
+                }else{
+                    document.getElementById("tache2").src="Img/no.png";
+                }
+            }    
+        </script>
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Ingresar
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">                                                                
+                                <form method="POST" class="form-group" action='Ingresar'>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <input class="form-control" type="text" onkeypress="validarUsuario(Usuario)" onclick="validarUsuario(Usuario)" onchange="validarUsuario(Usuario)" name="Usuario" id="Usuario" placeholder="Usuario" required/>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="image"   src="Img/no.png" id="tache1" class="img-circle" alt="No validado" style="height: 60%; width: 60%; display: none;"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <input class="form-control"  type="password" onkeypress="validarPass(Pass)" onclick="validarPass(Pass)" onchange="validarPass(Pass)" name="Pass" id="Pass" placeholder="Password" required/>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="image" src="Img/no.png"  id="tache2" class="img-circle" alt="No validado" style="height: 60%; width: 60%; display: none;"/>
+                                        </div>
+                                    </div>
+                                    <div class="text-center "><input class="btn-info" type=submit   value="Ingresar"/></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Registrar
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">                                                                
+                                <form method="POST" class="form-group" action='ServletHolaMundo'>
+                                    <input class="form-control" type="text" name="Usuario" id="UsuarioRegistro" placeholder="Usuario" required/>
+                                    <br/>
+                                    <input class="form-control" type="number" name="Edad" id="Edad" placeholder="Edad" required/>
+                                    <br/>                                    
+                                    <input class="form-control" type="text" name="PassRegistro" id="PassRegistro" placeholder="Password" required/>
+                                    <br/>
+                                    <input class="form-control" type="text" name="PassRegistroVelidacion" id="PassRegistroVelidacion" placeholder="Password" required/>
+                                    <br/>
+                                    <input class="form-control" type="email" name="Email" id="Email" placeholder="Email" required/>
+                                    <br/>
+                                    <div class="text-center "><input class="btn-info" type=submit value="Registrar"/></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery2.min.js"></script>
+    </body>
+</html>

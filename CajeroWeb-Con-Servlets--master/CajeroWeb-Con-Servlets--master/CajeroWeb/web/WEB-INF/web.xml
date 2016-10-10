@@ -1,0 +1,11 @@
+<web-app>    
+    <!--mapeo del servlet: Ingresar -->
+      <servlet>
+        <servlet-name>Ingresar</servlet-name>
+        <servlet-class>servletHTML.Ingresar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ingresar</servlet-name>
+        <url-pattern>/Ingresar</url-pattern>
+    </servlet-mapping>
+</web-app>
